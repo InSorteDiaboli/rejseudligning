@@ -77,8 +77,9 @@ export default defineComponent({
       console.log("Self pay " + selfpay)
       let exclselfpay = amount-selfpay
       console.log("Rest pay " + exclselfpay)
-
+      console.log(this.expense)
       this.totalexpenses = this.totalexpenses + Number(amount)
+      this.expense = 0
     }
   },
 });
